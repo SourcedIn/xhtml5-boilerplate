@@ -91,7 +91,7 @@ AddEncoding gzip                       svgz
 
 # Webfonts
 AddType application/vnd.ms-fontobject  eot
-AddType application/x-font-ttf    ttf ttc
+AddType application/x-font-ttf     ttf ttc
 AddType font/opentype                  otf
 AddType application/x-font-woff        woff
 
@@ -210,6 +210,7 @@ AddType text/x-vcard                   vcf
 # Data
   ExpiresByType text/xml                  "access plus 0 seconds"
   ExpiresByType application/xml           "access plus 0 seconds"
+  ExpiresByType application/xhtml+xml     "access plus 0 seconds"
   ExpiresByType application/json          "access plus 0 seconds"
 
 # Feed
@@ -415,7 +416,7 @@ ErrorDocument 404 /404.html
 AddDefaultCharset utf-8
 
 # Force UTF-8 for a number of file formats
-AddCharset utf-8 .html .css .js .xml .json .rss .atom
+AddCharset utf-8 .html .xhtml .css .js .xml .json .rss .atom
 
 
 
